@@ -1,6 +1,6 @@
 <h1>attractions/show</h1>
 
 <%= form_tag ride_path(@user, @attraction) do %>
-  <%= label_tag @attraction.name %><br>
+  <%= @attraction.name %><br>
   <%= submit_tag 'Go on this ride' %><br>
 <% end %>
