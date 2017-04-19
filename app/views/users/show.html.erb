@@ -1,5 +1,9 @@
 <h1>users/show</h1>
 
+<% if flash[:alert] %>
+   <div class="alert"><%= flash[:alert] %></div>
+<% end %>
+
 Name: <%= @user.name %><br>
 Height: <%= @user.height %><br>
 Happiness: <%= @user.happiness %><br>
