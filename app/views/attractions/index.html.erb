@@ -1,7 +1,11 @@
 <h1>attractions/index</h1>
 
 <%= @attractions.each do |attraction| %>
-  <%= link_to "Go on #{attraction.name}", attraction %><br>
+  <% if admin? %>
+    <%= link_to "Show #{attraction.name}", attraction %><br>
+  <% else %>
+    <%= link_to "Go on #{attraction.name}", attraction %><br>
+  <% end %>
 <% end %>
 
 <%= link_to 'New Attraction', new_attraction_path if admin? %>

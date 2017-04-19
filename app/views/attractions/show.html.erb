@@ -4,3 +4,4 @@
   <%= @attraction.name %><br>
   <%= submit_tag 'Go on this ride' %><br>
 <% end %>
+<br><%= link_to "Edit Attraction", edit_attraction_path if admin? %><br>
