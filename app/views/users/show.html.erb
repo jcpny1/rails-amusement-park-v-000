@@ -6,3 +6,6 @@ Happiness: <%= @user.happiness %><br>
 Nausea: <%= @user.nausea %><br>
 Mood: <%= @user.mood %><br>
 Tickets: <%= @user.tickets %><br>
+<%= 'ADMIN' if @user.admin %><br>
+<%= link_to 'See attractions', attractions_path %><br>
+<%= link_to 'Log Out', user_path, :method => :delete %><br>

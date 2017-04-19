@@ -22,5 +22,4 @@ class Ride < ActiveRecord::Base
         happiness: (self.user.happiness + self.attraction.happiness_rating) )
     end
   end
-
 end
